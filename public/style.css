@@ -1,0 +1,43 @@
+body {
+  color: gray;
+}
+
+video {
+  filter: hue-rotate(180deg) saturate(200%);
+  -moz-filter: hue-rotate(180deg) saturate(200%);
+  -webkit-filter: hue-rotate(180deg) saturate(200%);
+}
+
+.buttons {
+  margin-bottom: 2em;
+}
+.buttons button {
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: #336699;
+  border: none;
+  margin-left: 1em;
+}
+.buttons button:first-child {
+  margin-left: 0;
+}
+.buttons button:hover {
+  background-color: #000066;
+  cursor: pointer;
+}
+.buttons button[disabled]:hover,
+.buttons button[disabled] {
+  background-color: #778899;
+  color: #A9A9A9;
+  cursor: default;
+}
+
+.videos video {
+  float: left;
+  margin-left: 4%;
+  width: 48%;
+}
+.videos video:first-child {
+  margin-left: 0;
+}
